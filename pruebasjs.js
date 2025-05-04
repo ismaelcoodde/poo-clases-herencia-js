@@ -14,6 +14,6 @@ console.log(persona.nombreCompleto());
 
 for(nombrePropiedad in persona){
      console.log(nombrePropiedad) //Accedes al nombre de las propiedades del objeto 
-     console.log(persona[nombrePropiedad]); //Accedes a las propiedades
+     console.log(persona[nombrePropiedad]); //Accedes a las propiedades r
 }
 
