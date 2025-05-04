@@ -8,4 +8,12 @@ let persona = {
 }
 console.log(persona.nombreCompleto());
 
-// Esto es un objeto que dentro haces una función
+
+// Recorre todas las propiedades de un objeto con el ciclo for in
+
+
+for(nombrePropiedad in persona){
+     console.log(nombrePropiedad) //Accedes al nombre de las propiedades del objeto 
+     console.log(persona[nombrePropiedad]); //Accedes a las propiedades
+}
+
