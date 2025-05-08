@@ -1,20 +1,12 @@
-//añado nuevos valores y propiedades
+//Creo un nuevo objeto de la clase Persona
 
-let persona1 = {
-  nombre: "Ismael",
-  apellido: "Cruz",
-  nombreCompleto: function () {
-    return this.nombre + " " + this.apellido;
-  },
-};
+class Persona{
+  constructor (nombre,apellido){
+    this.nombre = nombre;
+    this.apellido = apellido;
+  }
+}
 
-let persona2 = {
-    nombre: "Juan",
-    apellido: "Ferrer",
-  };
-  
-console.log(persona1.nombreCompleto());
+let persona1 = new Persona('Ismael', 'Cruz');
+console.log(persona1)
 
-console.log(persona1.nombreCompleto.call(persona2));
-
-// Uso de call para usar el metodo persona1.nombreCompleto con los datos del objeto persona2
